@@ -8,7 +8,13 @@
  * turnMeBaby('Some text'); // 'txet emoS'
  */
 const turnMeBaby = str => {
+  if (typeof str === 'string') {
+  	str = str.reverse();
+  	return str;
+  } else {
+  	return Error('this is not a string');
+  }
   /* your logic here...*/
 };
-
+turnMeBaby("hello");
 export default turnMeBaby;

@@ -8,6 +8,11 @@
  * isObject(null); // false
  */
 const isObject = data => {
+  if (Object.prototype.toString.call(data) === '[object Object]') {
+    return true;
+  } else {
+    return false;
+  }
   /* your logic here...*/
 };
 
